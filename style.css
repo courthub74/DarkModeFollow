@@ -1,4 +1,6 @@
 /* CSS Variables */
+
+/* The ROOT */
 :root {
     --base-color: white;
     --base-variant: #e8e9ed;
@@ -58,6 +60,7 @@ h1 {
     gap: 1em;
 }
 
+/* The Buttons physical */
 button {
     border: none;
     padding: 1em 4em;
@@ -65,6 +68,7 @@ button {
     font-weight: bold;
 }
 
+/* The Buttons unique */
 #button_1 {
     background-color: var(--accent-color);
     
@@ -72,4 +76,14 @@ button {
 
 #button_2 {
     background-color: var(--primary-color);
+}
+
+/* Darkmode */
+.darkmode {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
 }
