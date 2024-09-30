@@ -109,3 +109,20 @@ button {
 #theme_switcher svg {
     fill: var(--primary-color);
 }
+
+/* Hide the SVG last child(daymode) */
+#theme_switcher svg:last-child {
+    display: none;
+}
+
+/* Invert this for (nitemode) */
+.darkmode #theme_switcher svg:first-child {
+    display: none;
+}
+
+/* Make Last child visible in (nitemode) */
+.darkmode #theme_switcher svg:last-child {
+    display: block;
+}
+
+
