@@ -72,6 +72,12 @@ button {
     cursor: pointer;
 }
 
+/* Link in Buttons */
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 /* The Buttons unique */
 #button_1 {
     background-color: var(--accent-color);
@@ -128,5 +134,12 @@ button {
 .darkmode #theme_switcher svg:last-child {
     display: block;
 }
+
+
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+/* NEXT PAGE */
 
 
