@@ -36,22 +36,22 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 1.2em;
+    gap: 4em;
     /* border: 1px solid black; */
     width: 80%;
 }
 
 /* Header */
-h1 {
+.header {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 2.2rem;
 }
 
 /* Para */
 .para {
     font-family: Poppins;
-    width: 60%;
-    min-width: 400px;
+    width: 70%;
+    min-width: 280px;
     font-size: 1rem;
 }
 
@@ -65,6 +65,7 @@ h1 {
 button {
     border: none;
     padding: 1em 4em;
+    padding: 2vh 5vw;
     color: white;
     /* font-weight: bold; */
     font-family: Poppins;
@@ -96,6 +97,12 @@ button a {
     --secondary-text: #a4a5b8;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+}
+
+/* Nav */
+#index_nav {
+    background-color: #3a435d;
+    margin: 0 2em 0 2em;
 }
 
 /* Theme Switch */
@@ -148,13 +155,17 @@ button a {
 form {
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 4em;
 }
 
 /* Header */
-h1 {
-    font-size: 3rem;
+.prem_header {
+    font-weight: bold;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
 }
+
 
 /* Inputs Section */
 .the_inputs {
@@ -167,7 +178,7 @@ h1 {
 input {
     background: none;
     border: var(--text-color) solid 2px;
-    padding: 1em 3em;
+    padding: 1.3em 4em;
     border-radius: 5px;
 }
 
