@@ -36,8 +36,9 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 2em;
     /* border: 1px solid black; */
+    /* background-color: blue; */
     width: 80%;
 }
 
@@ -58,14 +59,15 @@ body {
 /* Buttons */
 .buttons {
     display: flex;
-    gap: 1em;
+    gap: 1.2em;
+    margin: 2em 0 0 0;
 }
 
 /* The Buttons physical */
 button {
     border: none;
     padding: 1em 4em;
-    padding: 2vh 5vw;
+    padding: 2vh 6vw;
     color: white;
     /* font-weight: bold; */
     font-family: Poppins;
