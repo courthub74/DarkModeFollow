@@ -212,7 +212,10 @@ label {
 
 
 /* Smartphone Centering */
-@media screen and (max-width: 800px) {
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
     .container {
         display: flex;
         flex-direction: column;
@@ -220,6 +223,60 @@ label {
     }
     .para {
         text-align: justify;
+    }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+    /* Make Container gap smaller */
+    .container {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    /* Make Header smaller */
+    .header {
+        font-size: 1.6rem;
+        /* background-color: rebeccapurple; */
+    }
+    /* Make Para text smaller */
+    .para {
+        font-size: .8rem;
+    }
+
+    /* ************************************ */
+    /* ************************************ */
+    /* ************************************ */
+    /* NEXT PAGE */
+    form {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    /* Div with Inputs and Go Premium Button */
+    .landscape_div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prem_header {
+        font-size: 2rem;
+    }
+
+    #name_ {
+        padding: .5em 2em;
+    }
+
+    #password_ {
+        padding: .5em 2em;
+    }
+
+    #prem_button {
+        padding: .5em .5em;
+        font-size: .8rem;
+        margin-top: .5em;
     }
 }
 
