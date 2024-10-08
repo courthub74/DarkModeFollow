@@ -160,6 +160,12 @@ form {
     gap: 4em;
 }
 
+ /* Div with Inputs and Go Premium Button */
+ .landscape_div {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header */
 .prem_header {
     font-weight: bold;
@@ -199,6 +205,7 @@ label {
     padding: 1em 3em;
     background-color: var(--accent-color);
     cursor: pointer;
+    margin-top: 2em;
 }
 
 /* Go Back Link */
@@ -208,7 +215,17 @@ label {
     display: flex;
     justify-content: center;
     color: #3a435d;
+    margin-top: 1em;
 }
+
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
+/* ************************************** */
 
 
 /* Smartphone Centering */
@@ -224,10 +241,33 @@ label {
     .para {
         text-align: justify;
     }
+
+    /* ************************** */
+    /* ************************** */
+    /* ************************** */
+    /* NEXT PAGE */
+    .landscape_div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prem_button {
+        margin-top: 2em;
+    }
+
+    #back_ {
+        margin-top: 1.5em;
+    }
 }
 
 /* Landscape */
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    /* HTML */
+    html {
+        font-family: Poppins;
+    }
+
     /* Make Container gap smaller */
     .container {
         /* background-color: blue; */
@@ -238,6 +278,7 @@ label {
     /* Make Header smaller */
     .header {
         font-size: 1.6rem;
+        font-family: Poppins;
         /* background-color: rebeccapurple; */
     }
     /* Make Para text smaller */
@@ -253,6 +294,7 @@ label {
         display: flex;
         flex-direction: row;
         gap: 1em;
+        margin-top: 2em;
     }
 
     /* Div with Inputs and Go Premium Button */
@@ -262,7 +304,12 @@ label {
     }
 
     .prem_header {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin: 2em 2em 0 0;
+    }
+
+    label {
+        font-size: .9rem;
     }
 
     #name_ {
@@ -276,7 +323,13 @@ label {
     #prem_button {
         padding: .5em .5em;
         font-size: .8rem;
-        margin-top: .5em;
+        margin-top: 2em;
+    }
+
+    #back_ {
+        font-size: .8rem;
+        margin-top: 1.5em;
+        /* background-color: #0071ff; */
     }
 }
 
