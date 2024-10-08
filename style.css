@@ -261,7 +261,7 @@ label {
 }
 
 /* Landscape */
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 780px) and (max-width: 1000px) {
 
     /* HTML */
     html {
