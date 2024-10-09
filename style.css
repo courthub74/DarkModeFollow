@@ -32,190 +32,192 @@ body {
     flex-direction: column;
 }
 
-/* Container */
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    /* border: 1px solid black; */
-    /* background-color: blue; */
-    width: 80%;
-}
+@media screen and (min-width: 1200px) {
+    /* Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        /* border: 1px solid black; */
+        /* background-color: blue; */
+        width: 80%;
+    }
 
-/* Header */
-.header {
-    font-size: 2rem;
-    font-weight: bold;
-}
+    /* Header */
+    .header {
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-/* Para */
-.para {
-    font-family: Poppins;
-    width: 70%;
-    min-width: 280px;
-    font-size: 1rem;
-}
+    /* Para */
+    .para {
+        font-family: Poppins;
+        width: 70%;
+        min-width: 280px;
+        font-size: 1rem;
+    }
 
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 1.2em;
-    margin: 2em 0 0 0;
-}
+    /* Buttons */
+    .buttons {
+        display: flex;
+        gap: 1.2em;
+        margin: 2em 0 0 0;
+    }
 
-/* The Buttons physical */
-button {
-    border: none;
-    padding: 1em 4em;
-    padding: 2vh 6vw;
-    color: white;
-    /* font-weight: bold; */
-    font-family: Poppins;
-    font-size: 1rem;
-    cursor: pointer;
-}
+    /* The Buttons physical */
+    button {
+        border: none;
+        padding: 1em 4em;
+        padding: 2vh 6vw;
+        color: white;
+        /* font-weight: bold; */
+        font-family: Poppins;
+        font-size: 1rem;
+        cursor: pointer;
+    }
 
-/* Link in Buttons */
-button a {
-    text-decoration: none;
-    color: white;
-}
+    /* Link in Buttons */
+    button a {
+        text-decoration: none;
+        color: white;
+    }
 
-/* The Buttons unique */
-#button_1 {
-    background-color: var(--accent-color);
-    
-}
+    /* The Buttons unique */
+    #button_1 {
+        background-color: var(--accent-color);
+        
+    }
 
-#button_2 {
-    background-color: var(--primary-color);
-}
+    #button_2 {
+        background-color: var(--primary-color);
+    }
 
-/* Darkmode */
-.darkmode {
-    --base-color: #070b1d;
-    --base-variant: #101425;
-    --text-color: #ffffff;
-    --secondary-text: #a4a5b8;
-    --primary-color: #3a435d;
-    --accent-color: #0071ff;
-}
+    /* Darkmode */
+    .darkmode {
+        --base-color: #070b1d;
+        --base-variant: #101425;
+        --text-color: #ffffff;
+        --secondary-text: #a4a5b8;
+        --primary-color: #3a435d;
+        --accent-color: #0071ff;
+    }
 
-/* Nav */
-#index_nav {
-    background-color: #3a435d;
-    margin: 0 2em 0 2em;
-}
+    /* Nav */
+    #index_nav {
+        background-color: #3a435d;
+        margin: 0 2em 0 2em;
+    }
 
-/* Theme Switch */
-#theme_switcher {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--base-variant);
-    /* Sets the Theme Switch button to top right corner */
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
+    /* Theme Switch */
+    #theme_switcher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--base-variant);
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
 
-/* Theme Switch SVG */
-#theme_switcher svg {
-    fill: var(--primary-color);
-}
+    /* Theme Switch SVG */
+    #theme_switcher svg {
+        fill: var(--primary-color);
+    }
 
-/* Hide the SVG last child(daymode) */
-#theme_switcher svg:last-child {
-    display: none;
-}
+    /* Hide the SVG last child(daymode) */
+    #theme_switcher svg:last-child {
+        display: none;
+    }
 
-/* Invert this for (nitemode) */
-.darkmode #theme_switcher svg:first-child {
-    display: none;
-}
+    /* Invert this for (nitemode) */
+    .darkmode #theme_switcher svg:first-child {
+        display: none;
+    }
 
-/* Make Last child visible in (nitemode) */
-.darkmode #theme_switcher svg:last-child {
-    display: block;
-}
-
-
-/* ************************************* */
-/* ************************************* */
-/* ************************************* */
-/* ************************************* */
-/* NEXT PAGE */
-
-/* text is good to go already */
-
-/* Format the FORM */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
-}
-
- /* Div with Inputs and Go Premium Button */
- .landscape_div {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
-.prem_header {
-    font-weight: bold;
-    font-size: 2.2rem;
-    display: flex;
-    justify-content: center;
-}
+    /* Make Last child visible in (nitemode) */
+    .darkmode #theme_switcher svg:last-child {
+        display: block;
+    }
 
 
-/* Inputs Section */
-.the_inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
+    /* ************************************* */
+    /* ************************************* */
+    /* ************************************* */
+    /* ************************************* */
+    /* NEXT PAGE */
 
-/* Do the Inputs */
-input {
-    background: none;
-    border: var(--text-color) solid 2px;
-    padding: 1.3em 4em;
-    border-radius: 5px;
-}
+    /* text is good to go already */
 
-label {
-    font-size: 1.2rem;
-}
+    /* Format the FORM */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+    }
 
-.input_section {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-}
+    /* Div with Inputs and Go Premium Button */
+    .landscape_div {
+        display: flex;
+        flex-direction: column;
+    }
 
-/* Get Premiumed Button */
-#prem_button {
-    padding: 1em 3em;
-    background-color: var(--accent-color);
-    cursor: pointer;
-    margin-top: 2em;
-}
+    /* Header */
+    .prem_header {
+        font-weight: bold;
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: center;
+    }
 
-/* Go Back Link */
-#back_ {
-    width: 100%;
-    /* background-color: #3a435d; */
-    display: flex;
-    justify-content: center;
-    color: #3a435d;
-    margin-top: 1em;
+
+    /* Inputs Section */
+    .the_inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    /* Do the Inputs */
+    input {
+        background: none;
+        border: var(--text-color) solid 2px;
+        padding: 1.3em 4em;
+        border-radius: 5px;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    .input_section {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    /* Get Premiumed Button */
+    #prem_button {
+        padding: 1em 3em;
+        background-color: var(--accent-color);
+        cursor: pointer;
+        margin-top: 2em;
+    }
+
+    /* Go Back Link */
+    #back_ {
+        width: 100%;
+        /* background-color: #3a435d; */
+        display: flex;
+        justify-content: center;
+        color: #3a435d;
+        margin-top: 1em;
+    }
 }
 
 /* ************************************** */
@@ -230,42 +232,154 @@ label {
 
 /* Smartphone Centering */
 
-
-/* Portrait */
 @media screen and (orientation: portrait) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .para {
-        text-align: justify;
-    }
-
-    /* ************************** */
-    /* ************************** */
-    /* ************************** */
-    /* NEXT PAGE */
-    .landscape_div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #prem_button {
-        margin-top: 2em;
-    }
-
-    #back_ {
-        margin-top: 1.5em;
-    }
-}
-
-/* Landscape */
-@media screen and (min-width: 780px) and (max-width: 1000px) {
-
+    
     /* HTML */
     html {
         font-family: Poppins;
+    }
+
+    /* Body */
+    body {
+        min-height: 100vh;
+        background-color: var(--base-color);
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 80%;
+    }
+    
+    /* Header */
+    .header {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Paragraph */
+    .para {
+        font-family: Poppins;
+        width: 70%;
+        min-width: 280px;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        gap: 1.5em;
+        margin: 2em 0 0 0;
+    }
+
+    /* The Buttons physical */
+    button {
+        border: none;
+        padding: 1em 4em;
+        padding: 2vh 7vw;
+        color: white;
+        /* font-weight: bold; */
+        font-family: Poppins;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+
+    /* Link in Buttons */
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* The Buttons unique */
+    #button_1 {
+        background-color: var(--accent-color);
+        
+    }
+
+    #button_2 {
+        background-color: var(--primary-color);
+    }
+
+    /* Darkmode */
+    .darkmode {
+        --base-color: #070b1d;
+        --base-variant: #101425;
+        --text-color: #ffffff;
+        --secondary-text: #a4a5b8;
+        --primary-color: #3a435d;
+        --accent-color: #0071ff;
+    }
+
+    /* Nav */
+    #index_nav {
+        background-color: #3a435d;
+        margin: 0 2em 0 2em;
+    }
+
+    /* Theme Switch */
+    #theme_switcher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--base-variant);
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* Theme Switch SVG */
+    #theme_switcher svg {
+        fill: var(--primary-color);
+    }
+
+    /* Hide the SVG last child(daymode) */
+    #theme_switcher svg:last-child {
+        display: none;
+    }
+
+    /* Invert this for (nitemode) */
+    .darkmode #theme_switcher svg:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in (nitemode) */
+    .darkmode #theme_switcher svg:last-child {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    
+    /* HTML */
+    html {
+        font-family: Poppins;
+    }
+
+     /* Body */
+     body {
+        min-height: 100vh;
+        background-color: var(--base-color);
+        color: var(--text-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     /* Make Container gap smaller */
@@ -274,62 +388,103 @@ label {
         display: flex;
         flex-direction: column;
         gap: 1em;
+        margin: 0 3em 0 3em;
     }
     /* Make Header smaller */
     .header {
         font-size: 1.6rem;
         font-family: Poppins;
+        font-weight: bold;
         /* background-color: rebeccapurple; */
     }
     /* Make Para text smaller */
     .para {
-        font-size: .8rem;
-    }
-
-    /* ************************************ */
-    /* ************************************ */
-    /* ************************************ */
-    /* NEXT PAGE */
-    form {
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-        margin-top: 2em;
-    }
-
-    /* Div with Inputs and Go Premium Button */
-    .landscape_div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .prem_header {
-        font-size: 1.7rem;
-        margin: 2em 2em 0 0;
-    }
-
-    label {
         font-size: .9rem;
     }
 
-    #name_ {
-        padding: .5em 2em;
+    .buttons {
+        display: flex;
+        gap: 1.6em;
     }
 
-    #password_ {
-        padding: .5em 2em;
+    /* The Buttons physical */
+    button {
+        border: none;
+        padding: 1em 4em;
+        padding: 2vh 6vw;
+        color: white;
+        /* font-weight: bold; */
+        font-family: Poppins;
+        font-size: 1rem;
+        cursor: pointer;
     }
 
-    #prem_button {
-        padding: .5em .5em;
-        font-size: .8rem;
-        margin-top: 2em;
+    /* Link in Buttons */
+    button a {
+        text-decoration: none;
+        color: white;
     }
 
-    #back_ {
-        font-size: .8rem;
-        margin-top: 1.5em;
-        /* background-color: #0071ff; */
+    /* The Buttons unique */
+    #button_1 {
+        background-color: var(--accent-color);
+        
+    }
+
+    #button_2 {
+        background-color: var(--primary-color);
+    }
+
+    /* Darkmode */
+    .darkmode {
+        --base-color: #070b1d;
+        --base-variant: #101425;
+        --text-color: #ffffff;
+        --secondary-text: #a4a5b8;
+        --primary-color: #3a435d;
+        --accent-color: #0071ff;
+    }
+
+    /* Nav */
+    #index_nav {
+        background-color: #3a435d;
+        margin: 0 2em 0 2em;
+    }
+
+    /* Theme Switch */
+    #theme_switcher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 50%;
+        background-color: var(--base-variant);
+        /* Sets the Theme Switch button to top right corner */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* Theme Switch SVG */
+    #theme_switcher svg {
+        fill: var(--primary-color);
+    }
+
+    /* Hide the SVG last child(daymode) */
+    #theme_switcher svg:last-child {
+        display: none;
+    }
+
+    /* Invert this for (nitemode) */
+    .darkmode #theme_switcher svg:first-child {
+        display: none;
+    }
+
+    /* Make Last child visible in (nitemode) */
+    .darkmode #theme_switcher svg:last-child {
+        display: block;
     }
 }
-
